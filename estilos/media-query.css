@@ -27,8 +27,12 @@ Grandes telas: > 1280px
     section#login > div#formulario {
         float: right;
         width: 70%;
-        
+           }
+
+    div#formulario > h1 {
+        padding-top: 20px;
     }
+
     }
 @media screen and (min-width: 900px) {
     
