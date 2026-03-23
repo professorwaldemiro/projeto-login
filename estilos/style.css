@@ -26,7 +26,7 @@ section#login {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 250px;
-    height: 520px;
+    height: 530px;
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
@@ -67,6 +67,17 @@ form > div.campo {
 
 div.campo > label {
     display: none;
+}
+div.campo > span {
+    color: white;
+    height: 39px;
+    margin-top: 2.5px;
+    
+}
+div.campo > input {
+    margin-bottom: 5px;
+    height: 30px;
+
 }
 
 input[type=submit] {
