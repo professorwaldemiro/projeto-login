@@ -23,13 +23,13 @@ main {
 section#login {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px;
-    height: 530px;
+    left: 50%;   
+    width: 255px;
+    height: 550px;
     background-color: white;
     border-radius: 20px;
     overflow: hidden;
+    transform: translate(-50%, -50%);
     transition: width 1s, height 1s;
     transition-timing-function: ease;
 }
@@ -57,10 +57,11 @@ div#formulario > p {
 
 form > div.campo {
     background-color: blueviolet;
+    border: 2px solid blueviolet;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 6px;
+    border-radius: 8px;
     margin: 5px 0px;
     
 }
@@ -68,48 +69,59 @@ form > div.campo {
 div.campo > label {
     display: none;
 }
+
 div.campo > span {
+   
     color: white;
-    height: 39px;
-    margin-top: 2.5px;
-    
+    font-size: 1.6em;
+    width: 40px;
+    padding: 4px;
 }
 div.campo > input {
-    margin-bottom: 5px;
-    height: 30px;
+    background-color: aquamarine;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-5px);
 
 }
+div.campo > input:focus-within {
+    background-color: white;
+}
 
-input[type=submit] {
+div.campo > input[type=submit] {
     display: block;
     font-size: 1em;
     background-color: green;
-    color: white;
+    color: blue;
     width: 100%;
     height: 40px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 5px;
+    margin-bottom: 0px;
     text-align: center;
     
 }
-input[type=submit]:hover {
+div.campo > input[type=submit]:hover {
     background-color: darkgreen;
 
 }
-a.botao {
+div.campo > a.botao {
     display: block;
     text-align: center;
     width: 100%;
     height: 40px;
     background-color: rgb(45, 180, 45);
     border: 6px;
-    border-radius: 6px;
-    margin-top: 5px;
-
+    border-radius: 8px;
+      
 }
-a.botao:hover {
+div.campo > a.botao:hover {
     background-color: aquamarine;
   
 }

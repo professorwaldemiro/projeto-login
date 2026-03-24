@@ -9,14 +9,14 @@ pc: 769px a 1279px
 Grandes telas: > 1280px
 -----------------------------
 */
-@media screen and (min-width: 701px) and (max-width: 890px){
+@media screen and (min-width: 701px) and (max-width: 890px){/* Configurações para Tablets.*/
     body {
         background-image: linear-gradient(to top,  blueviolet, green  )
     }
     
     section#login {
         width: 80vw;
-        height: 297px;
+        height: 310px;
     }
 
     section#login > div#imagem {
@@ -28,6 +28,8 @@ Grandes telas: > 1280px
     section#login > div#formulario {
         float: right;
         width: 70%;
+        height: 100%;
+        padding-bottom: 30px;
            }
 
     section#login > div#formulario > h1 {
@@ -36,7 +38,7 @@ Grandes telas: > 1280px
     }
 
     }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) { /* Configurações para telas grandes*/
     
     body {
         background-image: linear-gradient(to top,  blueviolet, green)
@@ -62,7 +64,5 @@ Grandes telas: > 1280px
     div#formulario > p {
     font-size: 1.3em;
 }
-
-
 }
 
